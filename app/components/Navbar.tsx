@@ -8,10 +8,8 @@ const NavBar = () => {
     return ( 
         <nav className="bg-gray border-b border-gray-700
         shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 py-4
-                flex justify-between items-center">
-                <NavLink to='/' className='flex items-center gap-2
-                text-lg font-bold text-blue-300'>
+            <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <NavLink to='/' className='flex items-center gap-2 text-lg font-bold text-blue-300'>
                     <FaLaptop className="text-blue-400 text-xl" />
                     <span>The project developer</span>
                 </NavLink>
@@ -37,8 +35,7 @@ const NavBar = () => {
                 {
                     menuOpen &&
                     (
-                            <div className='md:hidden bg-gray-800 border-t border-gray-700 px-6
-                                py-4 space-y-2 space-x-4 text-center'>
+                            <div className='md:hidden bg-gray-800 border-t border-gray-700 px-6 py-4 space-y-2 space-x-4 text-center'>
                             <NavLink to='/'
                                 className={({ isActive }) => isActive ? active : base}
                                 onClick={() => setMenuOpen(false)}
