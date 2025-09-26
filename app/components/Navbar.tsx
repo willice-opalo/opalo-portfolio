@@ -22,7 +22,6 @@ const NavBar = () => {
                         <NavLink to='/blog' className={({isActive}) => isActive ? active : base}>Blog</NavLink>
                         <NavLink to='/about' className={({isActive}) => isActive ? active : base}>About</NavLink>
                         <NavLink to='/contact' className={({isActive}) => isActive ? active : base}>Contact</NavLink>
-
                     </div>
                 </div>
 
